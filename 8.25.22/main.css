@@ -1,0 +1,29 @@
+/* Use mdn over w3 every time */
+/* w3 teaches the wrong things the wrong way */
+
+article {
+    background-color: aqua;
+    /* padding changes inside dimensions */
+    /* margins changes outside dimensions */
+    /* clockwise circle: top, right, bottom, left */
+    padding: 50px 10px 5px 10px;
+
+    /* webkit = apple; moz = mozilla */
+}
+
+/* classes and ids override every other selector */
+/* web industry typically uses dashes, not camel case to name things */
+.myClass {
+    background-color: rebeccapurple;
+}
+article.myClass {
+    /* this selects all "myClass" elements in the article */
+    /* this overrides even another class */
+    background-color: aliceblue;
+}
+
+/* do not use an id on more than one element */
+#page-title {
+    /* typically use "em" over pixels */
+    font-size: 10em;
+}
